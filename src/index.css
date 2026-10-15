@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1c1917;
+  background-color: #fafaf9;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom highlight styling for SEO visual presentation mode */
+.seo-highlight-main {
+  background-color: rgba(254, 240, 138, 0.6);
+  border-bottom: 2px solid #ca8a04;
+  position: relative;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.seo-highlight-related {
+  background-color: rgba(187, 247, 208, 0.6);
+  border-bottom: 2px solid #16a34a;
+  position: relative;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.seo-heading-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  display: inline-block;
+}
